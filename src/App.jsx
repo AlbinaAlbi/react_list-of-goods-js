@@ -17,12 +17,10 @@ export const goodsFromServer = [
 
 const SORT_BY_ALPHABET = 'alphabetically';
 const SORT_BY_LENGTH = 'length';
-const REVERSE = 'reverse';
 
 function getPreparedGoods(goods, sortType, isReversed) {
   const preparedGoods = [...goods];
 
-  console.log('SORT TYPE', sortType, isReversed);
   if (sortType) {
     preparedGoods.sort((good1, good2) => {
       switch (sortType) {
